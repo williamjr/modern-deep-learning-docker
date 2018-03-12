@@ -44,7 +44,6 @@ RUN pip3 --no-cache-dir install jupyter
 RUN mkdir /root/.jupyter
 RUN echo "c.NotebookApp.ip = '*'" \
          "\nc.NotebookApp.open_browser = False" \
-         "\nc.NotebookApp.token = ''" \
          > /root/.jupyter/jupyter_notebook_config.py
 EXPOSE 8888
 
